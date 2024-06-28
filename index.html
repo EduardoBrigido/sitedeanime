@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/index.html#naruto -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes</title>
+    <style>
+       
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #b4e9ec;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 700;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .column {
+            flex: 1 1 calc(33.333% - 20px); /* Cada coluna ocupa cerca de 1/3 do espaço */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .column:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .column h3 {
+            font-size: 1.75rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .column p {
+            color: #000000;
+            line-height: 1.6;
+        }
+        .summary {
+            flex: 0 0 100%; /* Largura total */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .summary h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .summary p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animes</h1>
+        <nav>
+            <a href="http://127.0.0.1:5500/index.html#one-piece">One Piece</a>
+            <a href="http://127.0.0.1:5500/index.html#naruto">Naruto</a>
+            <a href="http://127.0.0.1:5500/index.html#jujutsu-kaisen">Jujutsu Kaisen</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <!-- Coluna para One Piece -->
+        <div class="column" id="one-piece">
+            <img src="https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2022/06/one-piece.jpg" alt="One Piece">
+            <h3>One Piece</h3>
+            <p>One Piece é um anime de aventura e pirataria criado por Eiichiro Oda.</p>
+            <p>Descrição adicional sobre One Piece.</p>
+        </div>
+        <!-- Coluna para Naruto -->
+        <div class="column" id="naruto">
+            <img src="https://s2-techtudo.glbimg.com/hTFaoYV96Ku-KM-WlwYRq4PuYBo=/0x0:1440x750/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/M/A/eWDUXrROSPWRBq5QQBuw/naruto-justwatch-techtudo.jpg" alt="Naruto">
+            <h3>Naruto</h3>
+            <p>Naruto é uma série de mangá e anime criada por Masashi Kishimoto.</p>
+            <p>Descrição adicional sobre Naruto.</p>
+        </div>
+        <!-- Coluna para Jujutsu Kaisen -->
+        <div class="column" id="jujutsu-kaisen">
+            <img src="https://sm.ign.com/ign_br/tv/j/jujutsu-ka/jujutsu-kaisen_tgbs.jpg" alt="Jujutsu Kaisen">
+            <h3>Jujutsu Kaisen</h3>
+            <p>Jujutsu Kaisen é um anime de ação e sobrenatural escrito e ilustrado por Gege Akutami.</p>
+            <p>Descrição adicional sobre Jujutsu Kaisen.</p>
+        </div>
+    </div>
+    
+    <!-- Texto sobre os animes -->
+    <div class="summary">
+        <h2>Conheça os Animes</h2>
+        <p><strong>One Piece:</strong> One Piece conta a história de Monkey D. Luffy, um jovem pirata com o objetivo de encontrar o tesouro supremo conhecido como One Piece.</p>
+        <p><strong>Naruto:</strong> Naruto Uzumaki é um jovem ninja que busca se tornar o Hokage, líder de sua aldeia, e é envolto em uma jornada de amizade e superação.</p>
+        <p><strong>Jujutsu Kaisen:</strong> Yuji Itadori se envolve com maldições e Jujutsu, lutando para proteger seus amigos e enfrentar forças sobrenaturais.</p>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
